@@ -26,7 +26,7 @@ def get_state_facts(state):
         if state == county['State']:
             households = county['Housing']['Households']
             my_county = county['County']
-    fact = fact + Markup("<p>" + "Households for  " + my_county + " in " + state + " is " + str(households) + "</p>")
+    fact = fact + Markup("<p>" + "Number of households for  " + my_county + " in " + state + " is " + str(households) + "</p>")
     return fact
     
 @app.route("/")
